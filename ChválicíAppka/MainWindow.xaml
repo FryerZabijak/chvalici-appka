@@ -1,0 +1,25 @@
+﻿<Window x:Name="mainWindow" x:Class="ChválicíAppka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChválicíAppka"
+        mc:Ignorable="d"
+        Title="Chválicí Appka" Height="159" Width="469" ResizeMode="NoResize" Foreground="White" Icon="/icon.png">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF352537" Offset="0"/>
+            <GradientStop Color="#FF272537" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="jmenoLabel" Content="Jméno:" HorizontalAlignment="Left" Margin="21,41,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="jmenoTextBox" HorizontalAlignment="Left" Margin="73,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" Background="#FF4F007F" Foreground="White" SelectionBrush="#FF7D00D7" BorderBrush="Black"/>
+        <Button x:Name="vykonejButton" Content="Vykonej" HorizontalAlignment="Left" Margin="73,68,0,0" VerticalAlignment="Top" Width="77" Click="vykonejButton_Click" Background="#FF691E96" Foreground="White" Height="21"/>
+        <RadioButton x:Name="pochvalaRadio" Content="Pochvala" HorizontalAlignment="Left" Margin="24,21,0,0" VerticalAlignment="Top" IsChecked="True" Foreground="White" Background="White"/>
+        <RadioButton x:Name="urazkaRadio" Content="Úrážka" HorizontalAlignment="Left" Margin="95,21,0,0" VerticalAlignment="Top" Foreground="White" Background="White"/>
+        <RadioButton x:Name="randomRadio" Content="Random" HorizontalAlignment="Left" Margin="161,21,0,0" VerticalAlignment="Top" Foreground="White" Background="White"/>
+        <Button x:Name="nastaveniButton" Content="⚙️" HorizontalAlignment="Left" Margin="390,10,0,0" VerticalAlignment="Top" Click="nastaveniButton_Click" Background="#FFD4D4D4" Foreground="Black" Height="26" Width="26" FontSize="14"/>
+
+    </Grid>
+</Window>
